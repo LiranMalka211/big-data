@@ -1,0 +1,27 @@
+Exercise 1
+Names: Liran Malka, Ofir Eren
+Job counters – first attempt
+•	Launched map tasks=9
+•	Launched reduce tasks=3
+•	Merged Map outputs = 27
+•	3 output files
+Job counters – set reducers to 6
+•	Launched map tasks=10
+•	Launched reduce tasks=6
+•	Merged Map outputs = 54
+•	(Killed map tasks=1)
+•	6 output files
+Q1. How many files are there? 6 output files 
+Q2. Did the number of mappers change? Yes, it was 9 and now it is 10
+Q3. Did the number of reducers change? Yes, it was 3 and now it is set for 6 
+Q4. Did the number of output files change? Why? Yes, because the reducers change
+Q5. What does the value of 'Merged Map outputs' represent, and how is it calculated? total number of map output partitions in the shuffle phase and merged across all reduce tasks. It is calculated by multiplying the number of successfully completed map tasks by the total number of reduce tasks.
+
+ Exercise 2
+The code changed in the mapper code.
+the updated code in github.
+Exercise 3
+The code changed in the reducer code.
+the updated code in github.
+
+
