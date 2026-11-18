@@ -4,11 +4,10 @@
 import sys
 import re
 def read_input(file):
-    seperator = r'[,.\ ]+'
     for line in file:
-        # split the line into words
-        list = re.split(seperator, line.strip())
-        yield [word.lower() for word in list if word]
+        # split on any whitespace, strip trailing commas/dots, lowercase
+        words = [w.rstrip('.,').lower() for w in line.split()]
+        yield [w for w in words if w]
 
 def main(separator='\t'):
     # input comes from STDIN (standard input)
