@@ -17,11 +17,13 @@ Q3. Did the number of reducers change? Yes, it was 3 and now it is set for 6
 Q4. Did the number of output files change? Why? Yes, because the numbers of reducers change and each reducer writes its own output file and thats why the numbers of outfiles equal to the numbers of reducers.
 Q5. What does the value of 'Merged Map outputs' represent, and how is it calculated? total number of map output partitions in the shuffle phase and merged across all reduce tasks. It is calculated by multiplying the number of successfully completed map tasks by the total number of reduce tasks.
 
- Exercise 2
+Exercise 2:
 The code changed in the mapper code.
-the updated code in github.
-Exercise 3
+the updated code in github - ex2_mapper.py
+
+Exercise 3:
 The code changed in the reducer code.
-the updated code in github.
+the updated code in github - ex3_reducer.py
+screenshot included as well in github - ex3_Screenshot.png
 
 
